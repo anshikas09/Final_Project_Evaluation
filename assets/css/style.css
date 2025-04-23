@@ -1106,3 +1106,31 @@ body {
   .footer { padding-block-start: 40px; }
 
 }
+
+.site-footer {
+background-color: #f8f8f8;
+padding: 40px;
+font-size: 14px;
+color: #333;
+}
+
+.footer-container {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.footer-section h3 {
+margin-bottom: 10px;
+font-size: 18px;
+color: #000;
+}
+
+.search-list {
+max-height: 200px;
+overflow-y: auto;
+}
+
+.footer-section p {
+line-height: 1.6;
+}
