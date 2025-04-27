@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kitter</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css">
+    <style>
+        /* Specific styles for contact page, consider moving to a separate CSS file if needed */
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-family: 'Carter One', cursive; /* Use a font that fits your theme */
+
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            /* Highlight on focus, use your theme's color */
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            height: 120px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            /* Use your theme's primary color */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            font-family: 'Carter One', cursive;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+            /* Darken on hover, use a darker shade of your theme's color */
+        }
+
+        .contact-details {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+        }
+
+        .contact-details p {
+            margin-bottom: 10px;
+        }
+
+        .contact-details a {
+            color: #007bff;
+            /* Link color,  use your theme's color */
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+            </button>
+
+            <a href="./index.html" class="logo">Kitter</a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./shop.html" class="navbar-link" data-nav-link>Shop</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./index.html#category" class="navbar-link" data-nav-link>Categories</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+                </ul>
+                <a href="./login.html" class="navbar-action-btn">Log In</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="action-btn" aria-label="Search">
+                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <button class="action-btn user" aria-label="User">
+                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                </button>
+                <a href="./cart.html" class="action-btn" aria-label="cart">
+                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+                    <span class="btn-badge">0</span>
+                    </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="section contact" aria-label="Contact Us">
+                <div class="container">
+                    <div class="contact-container">
+                        <h1>Contact Us</h1>
+                        <form class="contact-form" id="contact-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                        <div class="contact-details">
+                            <p>Visit us at:</p>
+                            <p>Kitter Master Office</p>
+                            <p>Call us: <a href="tel:+1234567890">+123 456 7890</a></p>
+                            <p>Email: <a href="mailto:info@kitter.com">info@kitter.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Kitter</a>
+                    <p class="footer-text">
+                        High-quality pet food and accessories to keep your furry friends happy and healthy.
+                    </p>
+                    <div class="social-link">
+                        <a href="#" class="social-btn" aria-label="Facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#" class="social-btn" aria-label="Youtube">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-list-title">Quick Links</h3>
+                    <ul>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Home</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="./shop.html" class="footer-link">Shop</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#category" class="footer-link">Categories</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Blogs</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-account">
+                    <h3 class="footer-list-title">Account</h3>
+                    <ul>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Dashboard</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">My Orders</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">My Address</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">My Wishlist</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3 class="footer-list-title">Newsletter</h3>
+                    <div class="newsletter-form-wrapper">
+                        <input type="email" name="email" class="newsletter-input" placeholder="Enter your email address"
+                            required>
+                        <button type="submit" class="newsletter-btn" aria-label="subscribe">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </button>
+                    </div>
+                    <p class="newsletter-text">
+                        Be the first to know about our new arrivals, exclusive offers and latest updates.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2025 Kitter. All rights reserved.
+                </p>
+                <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method"
+                    class="img">
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // Get the contact form
+        const contactForm = document.getElementById('contact-form');
+
+        // Function to handle form submission
+        function handleContactFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form behavior
+
+            // Get the form field values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            // Basic validation (you can add more robust validation)
+            if (name === '' || email === '' || message === '') {
+                alert('Please fill in all fields.'); // Use a better UI alert, like a modal
+                return;
+            }
+
+            // You can use a fetch API to send the data to a server
+            // Example:
+            fetch('/api/contact', {  //  Replace '/api/contact' with your server endpoint
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name,
+                        email,
+                        message
+                    })
+                })
+                .then(response => {
+                    if (response.ok) {
+                        alert('Message sent successfully!'); //  Use a better UI alert
+                        contactForm.reset(); // Clear the form
+                    } else {
+                        alert('Failed to send message. Please try again.'); // Use a better UI alert
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('An error occurred. Please try again later.'); //  Use a better UI alert
+                });
+        }
+
+        // Attach the event listener to the form
+        contactForm.addEventListener('submit', handleContactFormSubmit);
+    </script>
+</body>
+
+</html>
