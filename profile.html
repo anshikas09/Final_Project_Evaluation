@@ -1,0 +1,116 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Kitter</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <style>
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      background-image: url('./assets/images/hero-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-container {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      width: 420px;
+      text-align: center;
+    }
+
+    .profile-container img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .profile-container h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .profile-container p {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .logout-btn {
+      background-color: #ff6b6b;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .logout-btn:hover {
+      background-color: #e55a5a;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="profile-container">
+    <img id="profile-pic" src="./assets/images/default_avatar.png" alt="Profile Picture" onclick="redirectToHome()">
+    <h2 id="profile-name">User Name</h2>
+    <p id="profile-email">user@example.com</p>
+    <button class="logout-btn" onclick="logoutUser()">Log Out</button>
+  </div>
+
+  <script>
+    const userProfile = JSON.parse(localStorage.getItem('userProfile'));
+
+    if (userProfile) {
+      document.getElementById('profile-name').textContent = userProfile.name || 'User Name';
+      document.getElementById('profile-email').textContent = userProfile.email || 'user@example.com';
+      if (userProfile.avatar) {
+        document.getElementById('profile-pic').src = userProfile.avatar;
+      }
+    } else {
+      alert('No user logged in!');
+      window.location.href = 'login.html';
+    }
+
+    function redirectToHome() {
+      window.location.href = 'index.html';
+    }
+
+    function logoutUser() {
+      localStorage.removeItem('userProfile');
+      alert('You have been logged out!');
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+
+</html>
