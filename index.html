@@ -39,7 +39,120 @@
     - preload images
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
-  
+  <style>
+    /* --- Cat Dropdown Styling --- */
+.cat-dropdown {
+  position: relative;
+}
+
+.cat-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  animation: fadeSlide 0.5s ease;
+  z-index: 999;
+}
+
+.cat-dropdown:hover .cat-content {
+  display: block;
+}
+
+.cat-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-inner h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.cat-inner ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cat-inner ul li {
+  padding: 8px 0;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.cat-inner ul li:hover {
+  color: #ff6b6b;
+}
+
+/* Smooth Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- End of Cat Dropdown Styling --- */
+
+
+/* --- Dog Dropdown Styling --- */
+.dog-dropdown {
+  position: relative;
+}
+
+.dog-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  animation: fadeSlide 0.5s ease;
+  z-index: 999;
+}
+
+.dog-dropdown:hover .dog-content {
+  display: block;
+}
+
+.dog-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.dog-inner h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.dog-inner ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dog-inner ul li {
+  padding: 8px 0;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.dog-inner ul li:hover {
+  color: #4caf50; /* Green hover for dog */
+}
+
+  </style>
  
 </head>
 
@@ -63,11 +176,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>Home</a>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li class="navbar-item">
-            <a href="./shop.html" class="navbar-link" data-nav-link>Shop</a>
+            <a href="shop.html#shop" class="navbar-link" data-nav-link>Shop</a>
           </li>
 
           <li class="navbar-item">
@@ -75,11 +188,59 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+            <a href="index.html" class="navbar-link" data-nav-link>Blogs</a>
           </li>
 
           <li class="navbar-item">
-            <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+            <a href="contact.html#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li class="navbar-item">
+            <a href="about.html#about" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li class="navbar-item cat-dropdown">
+            <a href="#" class="navbar-link" data-nav-link>Cat</a>
+          
+            <!-- Dropdown Content for Cat -->
+            <div class="cat-content">
+              <div class="cat-inner">
+                <h2>Cat Supplies</h2>
+                <ul>
+                  <li>Food</li>
+                  <li>Wet Food</li>
+                  <li>Kitten Food</li>
+                  <li>Cat Treats</li>
+                  <li>Cat Toys</li>
+                  <li>Cat Clothing</li>
+                  <li>Cat Grooming</li>
+                  <li>Cat Beds & Tents</li>
+                  <li>Cat Walk & Travel</li>
+                  <li>Pharmacy</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          
+
+          <li class="navbar-item dog-dropdown">
+            <a href="#" class="navbar-link" data-nav-link>Dog</a>
+          
+            <!-- Dropdown Content for Dog -->
+            <div class="dog-content">
+              <div class="dog-inner">
+                <h2>Dog Supplies</h2>
+                <ul>
+                  <li>Dog Food</li>
+                  <li>Wet Dog Food</li>
+                  <li>Dog Treats</li>
+                  <li>Dog Toys</li>
+                  <li>Dog Clothing</li>
+                  <li>Dog Grooming</li>
+                  <li>Dog Beds</li>
+                  <li>Dog Walk & Travel</li>
+                  <li>Pharmacy</li>
+                </ul>
+              </div>
+            </div>
           </li>
           
 
@@ -94,11 +255,10 @@
           <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <button class="action-btn user" aria-label="User">
+        <a href="./profile.html" button class="action-btn user" aria-label="User" id="profileButton">
           <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
         </button>
-
-        <a href="./cart.html" class="action-btn" aria-label="cart">
+        <a href="cart.html#cart" class="action-btn" aria-label="cart">
           <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
         </a>       
 
@@ -765,7 +925,19 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script>
+    document.getElementById('profileButton').addEventListener('click', function () {
+      const userProfile = localStorage.getItem('userProfile');
+      
+      if (userProfile) {
+        // If user is logged in, go to profile page
+        window.location.href = 'profile.html';
+      } else {
+        // If not logged in, go to login page
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
  
 </body>
 
