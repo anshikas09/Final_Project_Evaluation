@@ -2,15 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Kitter</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.2/dist/ionicons.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Kitter - Hight Quality Pet Food</title>
+  <meta name="title" content="Kitter - Hight Quality Pet Food">
+  <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./login.html">
+  <link rel="stylesheet" href="./signup.html">
+  <link rel="stylesheet" href="./cart.html">
+<link rel="stylesheet" href="./shop.html">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+
     <style>
         /* Specific styles for contact page, consider moving to a separate CSS file if needed */
         .contact-container {
@@ -98,58 +127,103 @@
         .contact-details a:hover {
             text-decoration: underline;
         }
+        .navbar-link {
+  color: #333; /* dark grey or black text */
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  color: #ff6600; /* or any hover color you like */
+}
     </style>
 </head>
 
+
 <body id="top">
+
+    <!-- 
+      - #HEADER
+    -->
+  
     <header class="header" data-header>
-        <div class="container">
-            <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
-                <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
-                <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
-            </button>
-
-            <a href="./index.html" class="logo">Kitter</a>
-
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./shop.html" class="navbar-link" data-nav-link>Shop</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./index.html#category" class="navbar-link" data-nav-link>Categories</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link" data-nav-link>Blogs</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="./contact.html" class="navbar-link" data-nav-link>Contact</a>
-                    </li>
-                </ul>
-                <a href="./login.html" class="navbar-action-btn">Log In</a>
-            </nav>
-
-            <div class="header-actions">
-                <button class="action-btn" aria-label="Search">
-                    <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-                </button>
-                <button class="action-btn user" aria-label="User">
-                    <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-                </button>
-                <a href="./cart.html" class="action-btn" aria-label="cart">
-                    <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                    <span class="btn-badge">0</span>
-                    </a>
-            </div>
+      <div class="container">
+  
+        <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+          <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+        </button>
+  
+        <a href="./index.html" class="logo">Kitter</a>
+  
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="shop.html#shop" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="#category" class="navbar-link" data-nav-link>Categories</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="./index.html" class="navbar-link" data-nav-link>Blogs</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="contact.html#contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="about.html#about" class="navbar-link" data-nav-link>About Us</a>
+            </li>
+            <a href="./login.html" class="navbar-action-btn">Log In</a>
+        </nav>
+  
+        <div class="header-actions">
+  
+          <button class="action-btn" aria-label="Search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+          <a href="./profile.html" button class="action-btn user" aria-label="User" id="profileButton">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+          
+  
+          <a href="cart.html#cart" class="action-btn" aria-label="cart">
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+          </a>       
+  
+            <span class="btn-badge">0</span>
+          </button>
+  
         </div>
-    </header>
+  
+      </div>
+    </header>  
 
     <main>
         <article>
-            <section class="section contact" aria-label="Contact Us">
+
+            <section class="section hero has-bg-image" id="home" aria-label="home"
+            style="background-image: url('./assets/images/hero-banner.jpg')">
+            <div class="container">
+    
+              <h1 class="h1 hero-title">
+                <span class="span">Any Enquiry??</span>Contact Us
+              </h1>
+    
+            </div>
+          </section> 
+
+
+            <section class="section contact" aria-label="Contact Us" id="contact">
                 <div class="container">
                     <div class="contact-container">
                         <h1>Contact Us</h1>
@@ -174,97 +248,243 @@
         </article>
     </main>
 
-    <footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="footer-brand">
-                    <a href="#" class="logo">Kitter</a>
-                    <p class="footer-text">
-                        High-quality pet food and accessories to keep your furry friends happy and healthy.
-                    </p>
-                    <div class="social-link">
-                        <a href="#" class="social-btn" aria-label="Facebook">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                        </a>
-                        <a href="#" class="social-btn" aria-label="Twitter">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a>
-                        <a href="#" class="social-btn" aria-label="Instagram">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a>
-                        <a href="#" class="social-btn" aria-label="Youtube">
-                            <ion-icon name="logo-youtube"></ion-icon>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h3 class="footer-list-title">Quick Links</h3>
-                    <ul>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">Home</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="./shop.html" class="footer-link">Shop</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#category" class="footer-link">Categories</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">Blogs</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-account">
-                    <h3 class="footer-list-title">Account</h3>
-                    <ul>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">Dashboard</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">My Orders</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">My Address</a>
-                        </li>
-                        <li class="footer-item">
-                            <a href="#" class="footer-link">My Wishlist</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h3 class="footer-list-title">Newsletter</h3>
-                    <div class="newsletter-form-wrapper">
-                        <input type="email" name="email" class="newsletter-input" placeholder="Enter your email address"
-                            required>
-                        <button type="submit" class="newsletter-btn" aria-label="subscribe">
-                            <ion-icon name="mail-outline"></ion-icon>
-                        </button>
-                    </div>
-                    <p class="newsletter-text">
-                        Be the first to know about our new arrivals, exclusive offers and latest updates.
-                    </p>
-                </div>
-            </div>
+    
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Kitter</a>
+
+          <p class="footer-text">
+            If you have any question, please contact us at <a href="mailto:support@gmail.com"
+              class="link">support@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                30 Buttonwood St.Pataskala OH 43062
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+16234567891011" class="contact-link">(+1)-6234-56-789-1011</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="www.facebook.com" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="twitter.com" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="www.instagram.com" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p class="copyright">
-                    &copy; 2025 Kitter. All rights reserved.
-                </p>
-                <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method"
-                    class="img">
-            </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporate</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Track Order</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Grooming</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Positive Dog Training</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Veterinary Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Petco Insurance</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pet Adoption</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Resource Center</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section popular-searches">
+          <h3>Popular Searches</h3>
+          <div class="search-list">
+            <p>
+              Dog Food, Dog Collars Leashes Harnesses, Me-O, Cat Clothes, Cat Litter, Dog Raincoat, Dog Toys, Dog Beds,
+              Veg Dog Food, Dog Biscuits Cookies, Cat Dry Food, Cat Food, Pet Pharmacy, Pedigree, Cat Toys, Drools,
+              Royal Canin, Dog Grooming, Dog Carrier, Dogs Bones Chews, Pedigree Pro, Sheba, Whiskas,
+              Cat Collars Leashes Harnesses, Cat Wet Food, Dog Shampoos & Conditioners,
+              Cat Carriers Travel Supplies, Dog Accessories, Dog Bowls Feeders, Dog Clothes, Dog Treats,
+              Cat Accessories, Cat Litter Boxes, Cat Treats, Farmina, Dog Leashes, Cat Kitten Food,
+              Cat Beds Mats Tents, Deworming Tablets, Cat Shampoo & Conditioners, Dog Fleas & Ticks, Dog Boots,
+              Orijen Dog Food, Acana Dog Food, Dog Training & Behaviour, Dog Food Supplements & Vitamins,
+              Dog Sweaters, Dog Jackets, Blanket & cushions, Shoes, Boots & Socks, Sherwani, Raincoats,
+              Dog Skin & Coat Care, Skin Care, Shampoos & Conditioners, Calcium Supplements, Join Pain Medication,
+              Gut Health Care, Bow-ties, Ethnic wear, Dog Toys, Dog Beds, Cat Sweaters & Hoodies,
+              Furry & Plush Cat Beds, Cat Shampoos & Conditioners, Fleas & Ticks Care, Cat Joint care Supplements,
+              Cat Skin Care Products, Anxiety Care & Comforting Products, Interactive Cat Toys, Catnip Toys,
+              Clumping Cat Litter, Deodorizers & Litter Fresheners, Litter Boxes & Cat Toilets,
+              Rabbit Products, Fish Food, Bird food
+            </p>
+          </div>
         </div>
+    
+        <div class="footer-section contact-info">
+          <h3>Contact Us</h3>
+          <p>Supertails Head Office</p>
+          <p>1335, 11th Cross Rd, Stage 3, Indiranagar, Bengaluru, Karnataka 560038</p>
+        </div>
+      </div>
     </footer>
+    
 
-    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
-    </a>
+    <div class="footer-bottom">
+      <div class="container">
 
-    <script src="./assets/js/script.js"></script>
+        <p class="copyright">
+          &copy; 2022 Made with ♥ by <a href="#" class="copyright-link">codewithsadee.</a>
+        </p>
+
+        <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
     <script>
         // Get the contact form
         const contactForm = document.getElementById('contact-form');
