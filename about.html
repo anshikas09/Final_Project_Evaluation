@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Kitter - Hight Quality Pet Food</title>
+  <meta name="title" content="Kitter - Hight Quality Pet Food">
+  <meta name="description" content="This is an eCommerce html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./login.html">
+  <link rel="stylesheet" href="./signup.html">
+  <link rel="stylesheet" href="./cart.html">
+<link rel="stylesheet" href="./shop.html">
+<link rel="stylesheet" href="./cat_supplies.html">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <style>
+    /* body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    } */
+
+    .about-hero {
+      background-image: url('./assets/images/hero-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .about-hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-hero p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 5rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 2rem;
+      color: #555;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .team-section {
+      text-align: center;
+    }
+
+    .team-section h3 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .team-members {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      text-align: center;
+      max-width: 200px;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member p {
+      font-size: 2rem;
+      color: #555;
+    }
+
+    .team-member p:first-of-type {
+      font-weight: 600;
+      color: #333;
+    }
+
+  
+  </style>
+</head>
+
+
+ 
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <button class="nav-toggle-btn" aria-label="toggle manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" aria-label="true" class="close-icon"></ion-icon>
+      </button>
+
+      <a href="./index.html" class="logo">Kitter</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="shop.html#shop" class="navbar-link" data-nav-link>Shop</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="index.html#category" class="navbar-link" data-nav-link>Categories</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link" data-nav-link>Blogs</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li class="navbar-item">
+            <a href="about.html#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
+          
+         
+        </ul>
+
+        <a href="./login.html" class="navbar-action-btn">Log In</a>
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="action-btn" aria-label="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <!-- <button class="action-btn user" aria-label="User" onclick="window.location.href='login.html'">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button> -->
+        <!-- <button class="action-btn user" aria-label="User" onclick="handleUserClick()">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button> -->
+        <!-- <button class="action-btn user" aria-label="User" onclick="handleProfileClick()">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button> -->
+        <a href="./profile.html" button class="action-btn user" aria-label="User" id="profileButton">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+        </button>
+        
+
+        <a href="cart.html#cart" class="action-btn" aria-label="cart">
+          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+        </a>       
+
+          <span class="btn-badge">0</span>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-banner.jpg')">
+        <div class="container">
+
+          <h1 class="h1 hero-title">
+            <span class="span">Why Us??</span>
+          </h1>
+
+        </div>
+      </section>
+
+
+  <!-- About Content -->
+  <div class="about-container" id="about">
+    <div class="about-section">
+      <h2>Our Mission</h2>
+      <p>
+        At Kitter, we are dedicated to providing high-quality pet food that ensures your furry friends live a happy and
+        healthy life. We believe in sustainability, ethical sourcing, and creating products with love and care.
+      </p>
+    </div>
+
+    <div class="about-section">
+      <h2>Our Vision</h2>
+      <p>
+        Our vision is to become the most trusted brand for pet food, offering nutritious and delicious options for pets
+        around the world. We aim to build a community of pet lovers who prioritize the well-being of their companions.
+      </p>
+    </div>
+    </div>
+
+    <!-- Team Section -->
+    <!-- <div class="team-section">
+      <h3>Meet Our Team</h3>
+      <div class="team-members">
+        <div class="team-member">
+          <img src="./assets/images/team-member-1.jpg" alt="John Doe">
+          <p>John Doe</p>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/team-member-2.jpg" alt="Jane Smith">
+          <p>Jane Smith</p>
+          <p>Head of Marketing</p>
+        </div>
+        <div class="team-member">
+          <img src="./assets/images/team-member-3.jpg" alt="Emily Johnson">
+          <p>Emily Johnson</p>
+          <p>Product Manager</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <footer class="footer" style="background-image: url('./assets/images/footer-bg.jpg')">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Kitter</a>
+
+          <p class="footer-text">
+            If you have any question, please contact us at <a href="mailto:support@gmail.com"
+              class="link">support@gmail.com</a>
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+              <address class="address">
+                30 Buttonwood St.Pataskala OH 43062
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+              <a href="tel:+16234567891011" class="contact-link">(+1)-6234-56-789-1011</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="www.facebook.com" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="twitter.com" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="www.instagram.com" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Corporate</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="./contact.html" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQs</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Vendors</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Information</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Online Store</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shipping Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Track Order</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Grooming</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Positive Dog Training</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Veterinary Services</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Petco Insurance</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pet Adoption</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Resource Center</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-section popular-searches">
+          <h3>Popular Searches</h3>
+          <div class="search-list">
+            <p>
+              Dog Food, Dog Collars Leashes Harnesses, Me-O, Cat Clothes, Cat Litter, Dog Raincoat, Dog Toys, Dog Beds,
+              Veg Dog Food, Dog Biscuits Cookies, Cat Dry Food, Cat Food, Pet Pharmacy, Pedigree, Cat Toys, Drools,
+              Royal Canin, Dog Grooming, Dog Carrier, Dogs Bones Chews, Pedigree Pro, Sheba, Whiskas,
+              Cat Collars Leashes Harnesses, Cat Wet Food, Dog Shampoos & Conditioners,
+              Cat Carriers Travel Supplies, Dog Accessories, Dog Bowls Feeders, Dog Clothes, Dog Treats,
+              Cat Accessories, Cat Litter Boxes, Cat Treats, Farmina, Dog Leashes, Cat Kitten Food,
+              Cat Beds Mats Tents, Deworming Tablets, Cat Shampoo & Conditioners, Dog Fleas & Ticks, Dog Boots,
+              Orijen Dog Food, Acana Dog Food, Dog Training & Behaviour, Dog Food Supplements & Vitamins,
+              Dog Sweaters, Dog Jackets, Blanket & cushions, Shoes, Boots & Socks, Sherwani, Raincoats,
+              Dog Skin & Coat Care, Skin Care, Shampoos & Conditioners, Calcium Supplements, Join Pain Medication,
+              Gut Health Care, Bow-ties, Ethnic wear, Dog Toys, Dog Beds, Cat Sweaters & Hoodies,
+              Furry & Plush Cat Beds, Cat Shampoos & Conditioners, Fleas & Ticks Care, Cat Joint care Supplements,
+              Cat Skin Care Products, Anxiety Care & Comforting Products, Interactive Cat Toys, Catnip Toys,
+              Clumping Cat Litter, Deodorizers & Litter Fresheners, Litter Boxes & Cat Toilets,
+              Rabbit Products, Fish Food, Bird food
+            </p>
+          </div>
+        </div>
+    
+        <div class="footer-section contact-info">
+          <h3>Contact Us</h3>
+          <p>Supertails Head Office</p>
+          <p>1335, 11th Cross Rd, Stage 3, Indiranagar, Bengaluru, Karnataka 560038</p>
+        </div>
+      </div>
+    </footer>
+    
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 Made with ♥ by <a href="#" class="copyright-link">codewithsadee.</a>
+        </p>
+
+        <img src="./assets/images/payment.png" width="397" height="32" loading="lazy" alt="payment method" class="img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
