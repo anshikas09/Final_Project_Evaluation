@@ -151,6 +151,55 @@
 .dog-inner ul li:hover {
   color: #4caf50; /* Green hover for dog */
 }
+/* --- Pharmacy Dropdown Styling --- */
+.pharmacy-dropdown {
+  position: relative;
+}
+
+.pharmacy-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  animation: fadeSlide 0.5s ease;
+  z-index: 999;
+}
+
+.pharmacy-dropdown:hover .pharmacy-content {
+  display: block;
+}
+
+.pharmacy-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.pharmacy-inner h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.pharmacy-inner ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pharmacy-inner ul li {
+  padding: 8px 0;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.pharmacy-inner ul li:hover {
+  color: #ff6b6b; /* Red hover for pharmacy */
+}
+
 
   </style>
  
@@ -242,7 +291,32 @@
               </div>
             </div>
           </li>
-          
+          <li class="navbar-item pharmacy-dropdown">
+            <a href="#" class="navbar-link" data-nav-link>Pharmacy</a>
+<div class="pharmacy-content">
+  <div class="pharmacy-inner">
+    <h2>Pharmacy</h2>
+    <ul>
+      <li>Supplements</li>
+      <li>Multivitamins</li>
+      <li>Calcium Supplements</li>
+      <li>Skin & Coat Supplements</li>
+      <li>Weaning Supplement</li>
+      <li>Calming & Anxiety</li>
+      <li>Immunity Boosters</li>
+      <li>Appetite Stimulants</li>
+      <li>Hematinic & Platelet Boosters</li>
+      <li>Weight Management</li>
+      <li>Antibiotics</li>
+      <li>Prescription Diet</li>
+      <li>System Care (Skin, Joint, Digestive...)</li>
+      <li>Pain Medication</li>
+      <li>Tick & Flea</li>
+      <li>Dewormers</li>
+    </ul>
+  </div>
+</div>
+</li>
 
         </ul>
 
